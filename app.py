@@ -1,7 +1,7 @@
 """Streamlit interface for a reconstructed legal document summarization demo."""
 import streamlit as st
-from src.document_processing import extract_text
-from src.summarization import lexrank_summary, transformer_summary, word_count
+from document_processing import extract_text
+from summarization import summarize_text
 
 st.set_page_config(page_title='AI Legal Document Summarizer', page_icon='📄', layout='wide')
 st.title('📄 AI Legal Document Summarizer')
